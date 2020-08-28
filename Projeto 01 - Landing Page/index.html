@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Projeto 01 - Landing Page</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+    </head>
+    <body>
+        <header>
+            <div class="center">
+                <a class="logo"><img src="images/logo.png" /></a>
+            </div><!-- Center -->
+        </header>
+        <section class="banner">
+            <div class="center">
+                <div class="call">
+                    <h2>Loren Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id metus vitae ex porttitor condimentum sit amet sed sem. Aliquam mi ante, imperdiet vitae commodo vel, aliquet a dolor. </p>
+                    <p>Nam non felis tincidunt, porta quam vitae, malesuada purus. Sed non massa nec lectus scelerisque euismod nec in metus. Vestibulum ultrices est ac nulla fermentum suscipit. </p>
+                </div><!-- CALL -->
+                <div class="formulario">
+                    <h2>Preencha o formulário e se receba um loren ipsum dolor amet sit consectetur!</h2>
+                    <form>
+                        <div class="form-group">
+                            <span></span>
+                            <input type="text" name="Nome" placeholder="Nome completo" />
+                        </div><!--Form-group-->
+                        <div class="form-group">
+                            <span></span>
+                            <input type="email" name="email" placeholder="E-mail" />
+                        </div><!--Form-group-->
+                        <div class="form-group">
+                            <span></span>
+                            <input type="tel" name="telefone" placeholder="Telefone" />
+                        </div><!--Form-group-->
+                        <div class="box-sucess">Obrigado por nos escolher!</div>
+                        <div class="form-group">
+                            <input type="submit" name="acao" value="Enviar" />
+                        </div><!--Form-group-->
+                    </form>
+                </div><!--Formulario-->
+                <div class="clear"></div>
+            </div><!--Center-->
+        </section><!--Banner-->
+        
+        <section class="sobre">
+            <div class="center">
+                <h2>Fusce facilisis sed tellus ac tempor. In non aliquet arcu, ac lobortis nibh. Ut eu elit massa. Phasellus ut elementum neque. Fusce a sapien mauris. Mauris aliquet et leo in tincidunt. Nulla tempus finibus lorem id vestibulum. Suspendisse euismod turpis nec erat semper tincidunt. Mauris dapibus, purus ac maximus varius, mauris leo elementum risus.</h2>
+            </div><!--Center-->
+            <div class="arrow"><img src="images/arrow.png" /></div>
+        </section><!--Sobre-->
+
+        <section class="differ">
+            <div class="center">
+                <h2>Prestamos um serviço diferenciado!</h2>
+                <div class="differ-wrapper">
+                    <div class="differ-single w33">
+                        <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div><!--Icon-->
+                        <h3>Loren Ipsun</h3>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                    </div><!--Differ-Single-->
+                    <div class="differ-single w33">
+                        <div class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></div><!--Icon-->
+                        <h3>Loren Ipsun</h3>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                    </div><!--Differ-Single-->
+                    <div class="differ-single w33">
+                        <div class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></div><!--Icon-->
+                        <h3>Loren Ipsun</h3>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                    </div><!--Differ-Single-->
+                    <div class="differ-single w33">
+                        <div class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div><!--Icon-->
+                        <h3>Loren Ipsun</h3>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                    </div><!--Differ-Single-->
+                    <div class="differ-single w33">
+                        <div class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div><!--Icon-->
+                        <h3>Loren Ipsun</h3>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                    </div><!--Differ-Single-->
+                    <div class="differ-single w33">
+                        <div class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></div><!--Icon-->
+                        <h3>Loren Ipsun</h3>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                    </div><!--Differ-Single-->
+                </div><!--Differ-Wrapepr-->
+                <div class="clear"></div>
+            </div><!--Center-->
+        </section><!--Diferenciais-->
+        
+        <footer>
+            <div class="center">
+                <h2>Todos os direitos reservados</h2>
+            </div><!-- Center -->
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(function(){
+                $('form').submit(function(){
+                    var erro = false;
+                    var nome = $('[name="Nome"]').val();
+                    var email = $('[name="email"]').val();
+                    var tel = $('[name="telefone"]').val();
+                    resetForm();
+                    if(nome == ''){
+                        erro = true;
+                        var el = $('[name="Nome"]');
+                        el.parent().find('span').html('Por favor insira seu nome!')
+                        el.css('border','2px solid red');
+                    }
+                    if(email == ''){
+                        erro = true;
+                        var el = $('[name="email"]');
+                        el.parent().find('span').html('Por favor insira um email!');
+                        el.css('border','2px solid red');
+                    }
+                    if(tel == ''){
+                        erro = true;
+                        var el = $('[name="telefone"]');
+                        el.parent().find('span').html('Por favor insira um telefone!');
+                        el.css('border','2px solid red');
+                    }
+
+                    if(erro == false){
+                        $('.box-sucess').fadeIn(function(){
+                            setTimeout(function(){
+                                $('.box-sucess').fadeOut();
+                            }, 5000);
+                        });
+                        $(this)[0].reset();
+                    }
+
+                    return false;
+                })
+                function resetForm(){
+                    $('span').html('');
+                    $('input[type=text],input[type=email],input[type=tel]').css('border','1px solid #ccc');
+                }
+            })
+        </script>
+    </body>
+</html>

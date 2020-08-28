@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+                                /*Classes Auxiliares*/
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{clear: both;}
+.w33{
+    width: 33.3%;
+    float: left;
+}
+                                    /* Site */
+
+                                    /*Header*/
+header{
+    background-color: #212343;
+    padding: 15px 0;
+}
+header .logo{
+    cursor: pointer;
+}
+
+                                    /* Banner */
+section.banner{
+    padding: 70px 0;
+    background-image: url(../images/header_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 565px;
+}
+.call{
+    padding: 25px 15px;
+    max-width: 700px;
+    width: 55%;
+    float: left;
+    background-color: rgba(33,35,67,0.7);
+    color: white;
+    text-align: center;
+}
+.call h2{
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.call p{
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 25px;
+}
+.formulario form{
+    text-align: center;
+}
+.formulario{
+    max-width: 380px;
+    width: 40%;
+    float: right;
+    background-color:white;
+    padding: 0 10px;
+    border: 10px solid rgba(200,200,200,0.4);
+    background-clip: padding-box;
+}
+.formulario h2{
+    color: #333333;
+    padding: 20px 0;
+    font-weight: normal;
+    text-align: center;
+}
+.formulario input[type=text],
+.formulario input[type=email],
+.formulario input[type=tel]{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    line-height: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+}
+.formulario input[type=submit]{
+    cursor: pointer;
+    max-width: 250px;
+    width: 100%;
+    height: 45px;
+    color: white;
+    font-size: 20px;
+    background-color: #363A6D;
+    border: 0;
+    border-bottom: 2px solid #464c8c;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.formulario .form-group span{
+    color: red;
+    padding: 4px 0;
+    display: inline-block;
+    text-align: left;
+}
+.box-sucess{
+    display: none;
+    width: 100%;
+    padding: 4px 10px;
+    color: white;
+    background: #5fb382;
+    text-align: center;
+}
+                                /* Sobre nós */
+
+section.sobre{
+    background: #cccccc;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+section.sobre h2{
+    max-width: 70%;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+section.sobre .arrow{
+    position: relative;
+	top:40px;
+	left:0;
+}
+.arrow img{
+    width: 45px;
+}
+
+                                /* Diferenciais */
+section.differ{
+    padding: 15px 0;
+}
+section.differ h2{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #212343;
+}
+.differ-wrapper{padding: 20px 0;}
+.differ-single{
+    padding: 20px 15px;
+    text-align: center;
+}
+.differ-single i{
+    font-size: 42px;
+    color: #212343;
+}
+.differ-single h3{
+    font-size: 22px;
+    font-weight: normal;
+    margin: 10px 0;
+    color:#212343;
+}
+.differ-single p{
+    font-size: 16px;
+    color: black;
+}
+                                /*  Footer  */
+
+footer{
+    background-color: #212343;
+    padding: 15px 0 25px 0;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+}
+                                /*Responsivo*/
+@media screen and (max-width: 768px){
+    header .logo{
+        text-align: center;
+        display: inline-block;
+    }
+    section.banner .center{
+        flex-wrap: wrap;
+    }
+    .call{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .formulario{
+        width: 100%;
+        max-width: 350px;
+        position: initial;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+    .w33{
+        float: none;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
