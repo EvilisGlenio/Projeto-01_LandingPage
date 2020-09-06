@@ -2,6 +2,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
@@ -43,8 +44,54 @@ header{
     background-repeat: no-repeat;
 }
 
-                /* Header */
-
+                /* Banner - Form  */
+section.banner-form .bg{
+    height: 550px;
+    background-image: url(../imagens/bg-form.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.form-container{
+    float: right;
+    max-width: 400px;
+    height: 105%;
+    position: relative;
+    top: -2.5%;
+    margin-right: 30px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px #aaaaaa;
+}
+.form-container h2{
+    font-weight: normal;
+    font-size: 18px;
+    padding: 25px 15px;
+    background-color: rgb(210,210,210);
+    color: black
+}
+.form-container form{padding: 30px 15px;}
+.form-wrapper:not(:first-child){margin-top: 40px;}
+.form-wrapper:last-child{margin-top: 20px}
+.form-wrapper p{
+    font-size: 14px;
+    font-weight: normal;
+    color: #525252;
+}
+.form-wrapper input[type=text]{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    border: 1px solid #cccccc
+}
+.form-wrapper input[type=submit]{
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    background-color: #033C50;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
 
                 /***  Responsivo  ***/
 @media screen and (max-width: 510px){
@@ -52,5 +99,5 @@ header{
     header{text-align-last: center;}
     .logo-1, .logo-2{ float: none;display: inline-block;}
     .logo-1{margin-bottom: 15px;}
-    
+
 }
