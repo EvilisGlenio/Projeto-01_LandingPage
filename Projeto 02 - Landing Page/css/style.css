@@ -114,12 +114,42 @@ section.call > .center p{
     font-size: 17px;
 }
 
+    /*  Mosaico - Imagem seguida das caracteríscas de cada empreendimento  */
+.build-flex{
+    display: flex;
+}
+.build-1{
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+}
+.build-2{
+    width: 40%;
+    background-color: #4683AB;
+    color: white;
+    padding: 90px 40px;
+}
                 /***  Responsivo  ***/
 @media screen and (max-width: 510px){
         /*Header*/
     header{text-align-last: center;}
     .logo-1, .logo-2{ float: none;display: inline-block;}
     .logo-1{margin-bottom: 15px;}
+}
+
+@media screen and (max-width: 768px){
+        /* Mosaico */
+    .build-flex{
+        display: block;
+    }
+    .build-1{
+        width: 100%;
+        padding-top: 50%;
+    }
+    .build-2{
+        width: 100%;
+        padding: 60px 30px;
+    }
 }
 
 @media screen and (max-width: 960px){
