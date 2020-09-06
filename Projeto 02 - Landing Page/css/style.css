@@ -44,3 +44,13 @@ header{
 }
 
                 /* Header */
+
+
+                /***  Responsivo  ***/
+@media screen and (max-width: 510px){
+        /*Header*/
+    header{text-align-last: center;}
+    .logo-1, .logo-2{ float: none;display: inline-block;}
+    .logo-1{margin-bottom: 15px;}
+    
+}
