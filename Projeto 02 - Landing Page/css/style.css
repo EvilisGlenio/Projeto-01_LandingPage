@@ -46,18 +46,19 @@ header{
 
                 /* Banner - Form  */
 section.banner-form .bg{
+    position: relative;
     height: 550px;
     background-image: url(../imagens/bg-form.jpg);
     background-position: center;
     background-size: cover;
 }
 .form-container{
-    float: right;
     max-width: 400px;
+    width: 100%;
     height: 105%;
-    position: relative;
+    position: absolute;
     top: -2.5%;
-    margin-right: 30px;
+    right: 30px;
     background-color: white;
     box-shadow: 1px 1px 2px 1px #aaaaaa;
 }
@@ -93,11 +94,44 @@ section.banner-form .bg{
     text-transform: uppercase;
 }
 
+        /*  CALL - Chamada para o empreendimento  */
+section.call{
+    text-align: center;
+}
+section.call > .center{
+    padding: 70px 0 50px 0;
+    background-color: #29526d;
+}
+section.call > .center h2{
+    color: white;
+    font-weight: normal;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+section.call > .center p{
+    color: white;
+    font-size: 17px;
+}
+
                 /***  Responsivo  ***/
 @media screen and (max-width: 510px){
         /*Header*/
     header{text-align-last: center;}
     .logo-1, .logo-2{ float: none;display: inline-block;}
     .logo-1{margin-bottom: 15px;}
+}
 
+@media screen and (max-width: 960px){
+        /* Banner - Form  */
+    section.banner-form .bg{
+        text-align: center;
+        height: auto;
+        padding: 40px 0;
+    }
+    .form-container{
+        position: static;
+        display: inline-block;
+        height: 100%;
+    }
 }
