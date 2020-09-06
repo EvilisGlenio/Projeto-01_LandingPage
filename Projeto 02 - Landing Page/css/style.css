@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+            /** Classes Auxiliares **/
+.clear{clear: both;}
+.center{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+        /*** Início da Landing page ***/
+
+
+                /* Header */
+header{
+    background: rgb(220,220,220);
+    padding: 15px 0 30px 0;
+}
+.logo-1{
+    float: left;
+    width: 150px;
+    height: 50px;
+    background-image: url(../imagens/logo1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logo-2{
+    float: right;
+    width: 150px;
+    height: 50px;
+    background-image: url(../imagens/logo2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+                /* Header */
