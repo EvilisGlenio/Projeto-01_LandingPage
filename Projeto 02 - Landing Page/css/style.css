@@ -70,6 +70,14 @@ section.banner-form .bg{
     background-color: rgb(210,210,210);
     color: black
 }
+.form-container .box-sucess{
+    width: 100%;
+    padding: 3px 10px;
+    text-align: center;
+    background-color: #5fb382;
+    color: white;
+    display: none;
+}
 .form-container form{padding: 30px 15px;}
 .form-wrapper:not(:first-child){margin-top: 40px;}
 .form-wrapper:last-child{margin-top: 20px}
