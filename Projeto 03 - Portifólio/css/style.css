@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-html, body{
-    height: 100%;
-}
 
 /** Classes Auxiliares **/
 .clear{clear: both;}
@@ -72,29 +69,30 @@ header .call-1 p{
 
 section.services{
     background-color: #472562;
+    height: 300px;
 }
 section.services .center{
-    width: 1024px;
-    background-color: blue;
-    display: flex;
+    background: red;
+    height: 300px;
 }
-
+.services-wrapper{
+    width: 90%;
+    height: 100%;
+    background: green;
+    margin: 0 auto;
+    /*display: flex;*//* AQUI */
+}
 /*Text-Service*/
-    .text-service{
-        width: 50%;
-        background-color: green;
-        display: inline-block;
-    }
-/*Device*/
-
-section.services .device{
+ .cta{ 
+    display: none;/* Coloquei apenas para verificação */
     width: 50%;
-    height: 430px;
-    position: relative;
-    top: -30px;
-    background-image: url(../Images/device.png);
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: inline-block;
+    height: 100%;
+    background: yellow;
+}
+/*Device*/
+.device{
+    display: none;/* Coloquei apenas para verificação */
+    width: 50%;
+    height: 100%;
+    background: gray;
 }
