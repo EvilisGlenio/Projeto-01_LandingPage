@@ -80,7 +80,7 @@ section.services .center{
     height: 100%;
     background: green;
     margin: 0 auto;
-    /*display: flex;*//* AQUI */
+    display: flex;/* AQUI */
 }
 /*Text-Service*/
  .cta{ 
