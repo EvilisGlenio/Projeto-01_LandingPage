@@ -1,15 +1,16 @@
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
+a{text-decoration: none;}
 /** Classes Auxiliares **/
 .clear{clear: both;}
 .center{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 2%;
 }
 
                 /***  Inicio Home  ***/
@@ -22,7 +23,7 @@ header{
     background-image: url(../Images/capa.png);
     background-position:center;
     background-size: cover;
-    padding: 20px 2%;
+    padding: 30px 0;
 }
 .logo{
     float: left;
@@ -33,24 +34,27 @@ header{
     background-size: contain;
     background-repeat: no-repeat;
 }
-header nav{
+header .mobile{display: none;}
+header .desktop{
     float: right;
 }
-header nav ul{list-style-type: none;}
-header nav li{
+header .desktop ul{list-style-type: none;}
+header .desktop li{
     float: left;
     margin: 15px 20px 0 20px;
 }
-header li a{
+header .desktop li a{
     color: white;
     font-size: 16px;
     font-weight: lighter;
     text-decoration: none;
 }
 header .call-1{
-    width: 600px;
+    max-width: 600px;
     float: right;
-    margin: 200px 160px;
+    position: relative;
+    top: 200px;
+    right: 150px;
 }
 header .call-1 h1{
     color: white;
@@ -69,30 +73,148 @@ header .call-1 p{
 
 section.services{
     background-color: #472562;
-    height: 300px;
+    height: 400px;
 }
 section.services .center{
-    background: red;
-    height: 300px;
+    height: 100%;
 }
 .services-wrapper{
-    width: 90%;
+    width: 80%;
     height: 100%;
-    background: green;
     margin: 0 auto;
-    display: flex;/* AQUI */
+    display: flex;
 }
+
 /*Text-Service*/
- .cta{ 
-    display: none;/* Coloquei apenas para verificação */
+ .cta{
+    position: relative;
+    left: 120px;
     width: 50%;
     height: 100%;
-    background: yellow;
+    padding: 55px 0;
+    color: white;
+    text-align: left;
+}
+.cta h2{
+    font-size: 26px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.cta p{
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.cta ul{list-style-position: inside;}
+.cta li{
+    font-weight: normal;
+    line-height: 25px;
+}
+.cta a{
+    width: 165px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #FF703D;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 30px;
 }
 /*Device*/
 .device{
-    display: none;/* Coloquei apenas para verificação */
     width: 50%;
-    height: 100%;
-    background: gray;
+    height: calc(100% + 20px);
+    background-image: url(../Images/device.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: -20px;
+}
+
+
+
+                /***  RESPONSIVO  ***/
+
+@media screen and (max-width: 950px){
+    header .call-1{
+        float: none;
+        margin: 0 auto;
+        position: relative;
+        top: 200;
+        right: auto;
+    }  
+}
+@media screen and (max-width: 898px){
+    header .call-1{
+        padding: 0 2%;
+    }
+}
+@media screen and (max-width: 830px){
+    header .call-1{
+        width: 100%;
+        text-align: center;
+    }
+    header .call-1 h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    /* Header */
+    header .desktop{ display: none;}
+    header .mobile{display: initial;}
+    .mobile h2{
+        cursor: pointer;
+        float: right;
+        color: white;
+        font-size: 20px;
+    }
+    .mobile ul{
+        display: none;
+        list-style-type: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+    .mobile li{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        background-color: white;
+        padding: 5px 0;
+        opacity: 0.8;
+        border: 1px solid black;
+    }
+    .mobile a{color: black;}
+
+    /* SECTION - SERVICES */
+    section.services{
+        background-color: #472562;
+        height: auto;
+    }
+    .services-wrapper{
+        width: 100%;
+        display: inline-block;
+    }
+    .cta{
+        position: static;
+        width: 100%;
+        color: white;
+        text-align: center;
+        display: inline-block;
+
+    }
+    .cta ul{
+        text-align: left; 
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .cta li{font-size: 15px;}
+    .device{
+        display: none;
+    }
 }
