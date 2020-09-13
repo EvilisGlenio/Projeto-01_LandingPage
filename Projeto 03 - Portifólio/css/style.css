@@ -135,8 +135,32 @@ section.services .center{
     top: -20px;
 }
 
+                /* Section - Services */
+section.section-2{
+    position: relative;
+    width: 100%;
+    padding: 40px 2% 300px 2%;
+    text-align: center;
+    background-color: lawngreen;
+}
+section.section-2 h2{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+section.section-2 p{
+    font-weight: normal;
+    max-width: 950px;
+    display: inline-block;
+}
+section.section-2 img{
+    width: 100%;
+    max-width: 900px;
+    position: absolute;
+    top: 55%;
+}
 
-
+                /* Section - Services */
                 /***  RESPONSIVO  ***/
 
 @media screen and (max-width: 950px){
