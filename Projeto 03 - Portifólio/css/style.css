@@ -164,13 +164,65 @@ section.section-2 img{
 section.section-3{
     width: 100%;
 }
-.team-wrapper{display: flex;}
+.team-wrapper{display: flex; flex-wrap: wrap;}
+/*Team-Text*/
 .team-text{
     background: #835FA7;
     color: white;
-    padding: 100px 0;
+    padding: 140px 0 90px 0;
 }
-
+.team-text-wrapper{
+    width: 90%;
+    float: right;
+    padding: 0 25px;
+}
+.team-text-wrapper h2{
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.team-text-wrapper p{
+    font-size: 15px;
+    line-height: 35px;
+}
+/*Team-Perfil*/
+.team-single-wrapper{
+    width: 90%;
+    padding: 140px 25px 90px 25px;
+}
+.header-perfil{display: flex;}
+.header-perfil h2{
+    font-size: 21px;
+    font-weight: normal;
+}
+.header-perfil p{
+    font-size: 13px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.header-perfil .img-perfil{
+    width: 44px;
+    height:44px;
+    background-color: gray;
+    border-radius: 22px;
+    margin-left: 10px;
+}
+.team-single-wrapper p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.team-single-wrapper .slide{
+    width: 100%;
+}
+.team-single-wrapper .slide span{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: rgb(220, 220, 220);
+    float: left;
+    margin-right: 10px;
+}
+.team-single-wrapper .slide > .selected{background: gray;}
 
                 /***  RESPONSIVO  ***/
 
@@ -251,5 +303,30 @@ section.section-3{
     .cta li{font-size: 15px;}
     .device{
         display: none;
+    }
+    /* Section - section-2 */
+    section.section-2 img{
+        position: static;
+        margin: 25px 0;
+    }
+    section.section-2 p{    
+        font-size: 15px;
+    }
+    /* SECTION - section-3 */
+    .w50{width: 100%;}
+    .team-text{
+        padding: 80px 0 50px 0;
+    }
+    .team-text-wrapper{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        float: none;
+    }
+    .team-single-wrapper{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 80px 25px 50px 25px;
     }
 }
