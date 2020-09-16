@@ -215,6 +215,7 @@ section.section-3{
     width: 100%;
 }
 .team-single-wrapper .slide span{
+    cursor: pointer;
     width: 16px;
     height: 16px;
     border-radius: 8px;
@@ -224,6 +225,73 @@ section.section-3{
 }
 .team-single-wrapper .slide > .selected{background: gray;}
 
+                /* Section - section-4 */
+section.section-4{
+    background-color: #472563;
+    padding: 100px 20px 30px 20px;
+}
+section.section-4 > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+    /*FORM*/
+.form h2{
+    font-weight: lighter;
+    color: white;
+}
+.form p{
+    font-weight: lighter;
+    font-size: 15px;
+    color: white;
+    max-width: 400px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.form form{width: 90%; max-width: 500px;}
+.form input[type=text], .form input[type=email]{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #cccccc;
+}
+.form textarea{
+    width: 100%;
+    height: 145px;
+    resize: vertical;
+    line-height: 50px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #cccccc;
+}
+.form form input[type=submit]{
+    cursor: pointer;
+    width: 165px;
+    height: 45px;
+    color: white;
+    background: #FF703D;
+    border: 0;
+    border-radius: 30px;
+    margin-top: 7px;
+}
+
+    /*MAP*/
+.map-wrapper h2{
+    font-weight: lighter;
+    color: white;
+}
+.map-wrapper2{
+    max-width: 480px;
+    max-height: 480px;
+    margin-top: 15px;
+}
+.map{
+    width: 100%;
+    padding-top: 100%;
+    background-color: white;
+    border: 5px solid #cccc;
+}
                 /***  RESPONSIVO  ***/
 
 @media screen and (max-width: 950px){
@@ -328,5 +396,24 @@ section.section-3{
         max-width: 600px;
         margin: 0 auto;
         padding: 80px 25px 50px 25px;
+    }
+
+    /* SECTION - section-4 */
+    section.section-4 > .center{
+        text-align: center;
+        height: auto;
+    }
+    .form p, .form form{
+        margin: 0 auto;
+    }
+    .form form{ margin-top: 15px;}
+
+
+    .map-wrapper{margin-top: 40px;}
+    .map-wrapper2{
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 550px;
+        max-height: 550px;
     }
 }
