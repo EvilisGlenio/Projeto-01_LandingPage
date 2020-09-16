@@ -292,6 +292,19 @@ section.section-4 > .center{
     background-color: white;
     border: 5px solid #cccc;
 }
+
+                /* Footer - Rodapé */
+footer{
+    background: #192123;
+    padding: 40px 2%;
+    color: white;
+}
+footer div p:nth-of-type(1){
+    float: left;
+}
+footer div p:nth-of-type(2){
+    float: right;
+}
                 /***  RESPONSIVO  ***/
 
 @media screen and (max-width: 950px){
@@ -415,5 +428,19 @@ section.section-4 > .center{
         margin-top: 20px;
         max-width: 550px;
         max-height: 550px;
+    }
+
+    /* Footer - Rodapé */
+    footer{
+        text-align: center;
+    }
+    footer div p:nth-of-type(1){
+        float: none;
+    }
+    footer div p:nth-of-type(2){
+        float: none;
+    }
+    footer div p{
+        line-height: 35px;
     }
 }
