@@ -203,7 +203,9 @@ section.section-3{
 .header-perfil .img-perfil{
     width: 44px;
     height:44px;
-    background-color: gray;
+    background-image: url(../Images/avatar.2.jpg);
+    background-position: center;
+    background-size: cover;
     border-radius: 22px;
     margin-left: 10px;
 }
@@ -275,6 +277,22 @@ section.section-4 > .center{
     border-radius: 30px;
     margin-top: 7px;
 }
+.form form span{
+    color: red;
+    padding: 3px 0;
+    font-size: 13px;
+}
+.form form .box-sucess{
+    display: none;
+    width: 100%;
+    padding: 3px 0;
+    text-align: center;
+    background-color: rgb(90, 224, 182);
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    margin-top: -3px;
+}
 
     /*MAP*/
 .map-wrapper h2{
@@ -287,9 +305,9 @@ section.section-4 > .center{
     margin-top: 15px;
 }
 .map{
+    position: relative;
     width: 100%;
     padding-top: 100%;
-    background-color: white;
     border: 5px solid #cccc;
 }
 
@@ -425,11 +443,9 @@ footer div p:nth-of-type(2){
     .map-wrapper{margin-top: 40px;}
     .map-wrapper2{
         margin: 0 auto;
-        margin-top: 20px;
         max-width: 550px;
         max-height: 550px;
     }
-
     /* Footer - Rodapé */
     footer{
         text-align: center;
