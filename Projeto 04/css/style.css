@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body,html{
+    height: 100%;
+}
+
+/*** Classes Auxiliares ***/
+.clear{clear: both;}
+.center{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/******/
+
+            /*Inicio da Página*/
+                /*Header*/
+header{padding: 20px 2%;}
+header .logo img{
+    width: 236px;
+    float: left;
+}
+header .mobile i{display: none;}
+header .mobile ul{display: none;}
+header .desktop{float: right;}
+header .desktop ul{list-style: none}
+header .desktop ul li{
+    float: left;
+    padding: 0 16px;
+    position: relative;
+    top: 8px;
+}
+header .desktop ul li a{
+    color: #b4b4b4;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+/**** Responsivo ****/
+
+@media screen and (max-width: 768px){
+    header .desktop{display: none;}
+    header .mobile i{display: initial;}
+    header .mobile i{
+        color: slategrey ;
+        float: right;
+        font-size: 35px;
+    }
+    header .mobile ul{
+        /*display: initial;*/
+        list-style: none;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+    header .mobile ul li{
+        display: inline-block;
+        width: 100%;
+        padding: 3px 0;
+        text-align: center;
+    }
+    header .mobile ul li a{
+        color: #b4b4b4;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
