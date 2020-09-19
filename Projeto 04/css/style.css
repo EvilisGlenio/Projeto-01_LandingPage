@@ -19,7 +19,7 @@ body,html{
 /******/
 
             /*Inicio da Página*/
-                /*Header*/
+                /*Begin Header*/
 header{padding: 20px 2%;}
 header .logo img{
     width: 236px;
@@ -41,7 +41,21 @@ header .desktop ul li a{
     font-size: 14px;
     text-transform: uppercase;
 }
-
+                /*End Header*/
+                /*Begin Mosaico*/
+section.mosaico .center{
+    display: flex;
+}
+.wrapper-mosaico{
+    width: calc(100% / 6);
+}
+.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #cccccc;
+    border: 5px solid white;
+}
+                /*End Mosaico*/
 
 /**** Responsivo ****/
 
