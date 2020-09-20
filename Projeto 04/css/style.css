@@ -73,6 +73,12 @@ header .desktop ul li a{
             text-transform: uppercase;
         }
     }
+    /*580px*/
+    @media screen and (max-width: 580px){
+        header .logo img{
+            width: 190px;
+        }
+    }
 
                 /*Aqui termina o Header*/
 
@@ -94,15 +100,12 @@ section.mosaico .center{
             /*Aqui começa a sessão Serviços*/
 section.servicos .center{
     position: relative;
+    top: -30px;
     max-width: 800px;
-}
-.wrapper-servicos{
     text-align: center;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: -30px;
 }
 .servicos-single h2{
     font-size: 15px;
@@ -140,24 +143,99 @@ section.servicos .center{
     /*768px*/
     @media screen and (max-width: 768px){
         
-        .wrapper-servicos{
-            display: initial;
-            width: 100%;
-        }
-        .servicos-single{
-            margin: 0 auto;
+        section.servicos .center{
+            flex-direction: column;
         }
         .servicos-single:nth-of-type(1){
-            width: 53%;
+            width: 90%;
+            max-width: 350px;
             padding: 40px 2%;
         }
         .servicos-single:nth-of-type(2){
-            width: 58%;
+            width: 90%;
+            max-width: 380px;
             padding: 50px 2%;
         }
         .servicos-single:nth-of-type(3){
-            width: 53%;
+            width: 90%;
+            max-width: 350px;
             padding: 40px 2%;
         }
     }
+    /*580px*/
+    @media screen and (max-width: 580px){
+        
+        section.servicos .center{
+            top: -20px;
+        }
+    }
             /*Aqui termina a sessão Serviços*/
+
+        /*Aqui inicia a sessão Perfil-Container*/
+section.perfil-container .center{
+    max-width: 800px;
+    padding: 40px 0;
+}
+.wrapper-perfil-1{
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+}
+.wrapper-perfil-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.wrapper-perfil-2 .img-perfil{
+    width: 40%;
+    height: 100%;
+    background-image: url(../images/img_perfil.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+.wrapper-perfil-2 .text-perfil{
+    width: 60%;
+    padding: 0 30px;
+}
+.wrapper-perfil-2 .text-perfil h2{
+    font-size: 18px;
+    color: #698293;
+}
+.wrapper-perfil-2 .text-perfil p{
+    font-size: 14px;
+    color: #4b4b4b;
+    margin-top: 8px;
+}
+
+        /*Responsivo: perfil-container*/
+    /*768px*/
+    @media screen and ( max-width: 768px){
+        .wrapper-perfil-2{
+            display: inline-block;
+            text-align: center;
+        }
+        .wrapper-perfil-2 .img-perfil{
+            width: 50%;
+            padding-top: 70%;
+            height: auto;
+            display: inline-block;
+        }
+        .wrapper-perfil-2 .text-perfil{
+            width: 100%;
+            padding: 0 30px;
+            text-align: justify;
+        }
+    }
+    /*580px*/
+    @media screen and ( max-width: 580px){
+        .wrapper-perfil-2 .img-perfil{
+            width: 80%;
+            padding-top: 110%;
+            height: auto;
+            display: inline-block;
+        }
+    }
