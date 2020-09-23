@@ -351,3 +351,62 @@ section.depoimentos{ text-align: center;}
 }
 
         /* Aqui termina a sessão Depoimentos */
+
+        /* Aqui inicia a sessão Redes Sociais */
+    /*instagran*/
+.call-instagran{
+    width: 100%;
+    padding: 40px 0;
+    background: #98a5ae;
+    text-align: center;
+}
+.call-instagran p{
+    color: white;
+    font-size: 13px;
+    line-height: 23px;
+}
+    /*Mozaico Redes*/
+.mosaico-redes{
+    width: 100%;
+}
+.img-single{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: #cccccc;
+    border: 5px solid white;
+}
+    /*Responsivo: Mosaico-redes*/
+    /*1024px*/
+    @media screen and (max-width: 1024px){
+        .img-single{
+            width: calc(100% / 6);
+            padding-top: calc(100% / 6);
+        }
+        .mosaico-redes div:nth-of-type(1n+7){
+            display: none;
+        }
+    }
+    /*768px*/
+    @media screen and (max-width: 768px){
+        .img-single{
+            width: calc(100% / 3);
+            padding-top: calc(100% / 3);
+        }
+        .mosaico-redes div:nth-of-type(1n+4){
+            display: none;
+        }
+    }
+    
+    /*Facebook*/
+.call-facebook{
+    padding: 40px 0;
+    background-color: #576975;
+    text-align: center;
+}
+.call-facebook p{
+    font-size: 13px;
+    color: white;
+    line-height: 23px;
+}
+        /* Aqui termina a sessão Redes Sociais */
