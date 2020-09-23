@@ -289,7 +289,7 @@ section.perfil-container .center{
 
             /*Aqui termina a sessão Vídeos*/
 
-        /* Aqui inicia a sessão tratamentos */
+        /* Aqui inicia a sessão Tratamentos */
 section.tratamentos{
     padding: 70px 0;
 }
@@ -318,4 +318,36 @@ section.tratamentos .center{
     padding: 10px 0;
 }
 
-        /* Aqui termina a sessão tratamentos */
+        /* Aqui termina a sessão Tratamentos */
+
+        /* Aqui inicia a sessão Depoimentos */
+section.depoimentos{padding: 50px 0;}
+section.depoimentos > h2{
+    font-size: 18px;
+    color: #698293;
+    text-align: center;
+}
+section.depoimentos > .center{
+    max-width: 400px;
+    padding: 50px 0;
+}
+section.depoimentos{ text-align: center;}
+.single-depoimento quote{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+.perfil-depoimento{padding: 15px 0;}
+.perfil-depoimento img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.perfil-depoimento span{
+    position: relative;
+    top: 8px;
+    font-size: 13px;
+    color: #b4b4b4;
+    vertical-align: top;
+}
+
+        /* Aqui termina a sessão Depoimentos */
