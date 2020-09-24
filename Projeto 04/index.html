@@ -27,16 +27,17 @@
         </nav><!--Desktop-->
         <nav class="mobile">
             <i class="fa fa-bars" aria-hidden="true"></i>
-            <ul>
-                <li><a href="">quem sou</a></li>
-                <li><a href="">tratamentos</a></li>
-                <li><a href="">depoimentos</a></li>
-                <li><a href="">contato</a></li>
-            </ul>
         </nav><!--mobile-->
         <div class="clear"></div><!--Clear-->
-
     </header>
+    <nav class="menu-mobile">
+        <ul>
+            <li><a href="">quem sou</a></li>
+            <li><a href="">tratamentos</a></li>
+            <li><a href="">depoimentos</a></li>
+            <li><a href="">contato</a></li>
+        </ul>
+    </nav><!--Menu-Mobile-->
 
     <section class="mosaico">
         <div class="center">
@@ -224,23 +225,24 @@
     </section><!--Social-->
 
     <section class="formulario">
+        <div class="box-sucess">Enviado com sucesso</div><!--Box-Sucess-->
         <h2>Contato</h2>
         <div class="center">
             <form>
                 <div class="wrapper-form w100">
-                    <span>Nome:</span>
+                    <p>Nome:</p>
                     <input type="text" name="nome" />
                 </div><!--Wrapper-Form-->
                 <div class="wrapper-form w50">
-                    <span>E-mail:</span>
+                    <p>E-mail:</p>
                     <input type="email" name="email" />
                 </div><!--Wrapper-Form-->
                 <div class="wrapper-form w50">
-                    <span>Telefone:</span>
+                    <p>Telefone:</p>
                     <input type="tel" name="tel" />
                 </div><!--Wrapper-Form-->
                 <div class="wrapper-form w100">
-                    <span>Mensagem:</span>
+                    <p>Mensagem:</p>
                     <textarea name="mensagem"></textarea>
                 </div><!--Wrapper-Form-->
                 <div class="wrapper-form w100">
@@ -250,5 +252,96 @@
             <div class="clear"></div>
         </div><!--Center-->
     </section><!--Formulário-->
+
+    <footer class="footer-01">
+        <div class="wrapper-footer">
+            <h2>Telefone</h2>
+            <p>(48)9999-9999</p>
+            <p>(48)9999-9999</p>
+        </div><!--Wrapper-Footer-->
+
+        <div class="wrapper-footer">
+            <h2>Horários</h2>
+            <p>Segunda à Sexta</p>
+            <p>08:00 às 12:00</p>
+        </div><!--Wrapper-Footer-->
+
+        <div class="wrapper-footer">
+            <h2>Endereço</h2>
+            <p>Av. Trompowsky, 291. Torre 1 Sala 103</p>
+            <p>Cep 88015300 - Florianópolis, SC. 8802001</p>
+        </div><!--Wrapper-Footer-->
+        <div class="clear"></div>
+    </footer><!--Footer-01-->
+
+    <footer class="footer-02">
+        <h3>danki.code</h3>
+    </footer><!--Footer-02-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!--Função para descer o menu mobile-->
+    <script>
+        $(function(){
+            $('nav.mobile i').click(function(){
+                $('nav.menu-mobile ul').slideToggle();
+            })
+        })
+    </script>
+    <!--...-->
+
+    <!--Função de feedback para Formulário-->
+    <script>
+        $(function(){
+          $('form').submit(function(){
+              var erro = false;
+              var nome = $('[type=text]').val();
+              var email = $('[type=email]').val();
+              var tel = $('[type=tel]').val();
+              var text = $('[name=mensagem]').val();
+            resetForm();
+              
+              if(nome == ''){
+                  erro = true;
+                  var el = $('[type=text]');
+                  el.parent().find('p').css('color','red');
+                  el.css('border','1px solid red');
+              }
+              if(email == ''){
+                erro = true;
+                  var el = $('[type=email]');
+                  el.parent().find('p').css('color','red');
+                  el.css('border','1px solid red');
+              }
+              if(tel == ''){
+                erro = true;
+                  var el = $('[type=tel]');
+                  el.parent().find('p').css('color','red');
+                  el.css('border','1px solid red');
+              }
+              if(text == ''){
+                erro = true;
+                  var el = $('[name=mensagem]');
+                  el.parent().find('p').css('color','red');
+                  el.css('border','1px solid red');
+              }
+
+            if(erro == false){
+              $('.box-sucess').fadeIn(function(){
+                  setTimeout(function(){
+                      $('.box-sucess').fadeOut();
+                  },5000);
+              });
+              $(this)[0].reset();
+            }
+
+              return false;
+          })
+          function resetForm(){
+              $('input[type=text],[type=email],[type=tel],[name=mensagem]').css('border','1px solid #dadada');
+              $('p').css('color','#b4b4b4');
+          }
+        })
+    </script>
 </body>
 </html>

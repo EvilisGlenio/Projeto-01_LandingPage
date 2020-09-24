@@ -28,7 +28,6 @@ header .logo img{
     float: left;
 }
 header .mobile i{display: none;}
-header .mobile ul{display: none;}
 header .desktop{float: right;}
 header .desktop ul{list-style: none}
 header .desktop ul li{
@@ -43,35 +42,43 @@ header .desktop ul li a{
     font-size: 14px;
     text-transform: uppercase;
 }
+
+nav.menu-mobile ul{display: none;}
+
         /*Responsivo: Header*/
     /*768px*/
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 780px){
         header .desktop{display: none;}
         header .mobile i{display: initial;}
         header .mobile i{
+            cursor: pointer;
             color: slategrey ;
             float: right;
             font-size: 35px;
         }
-        header .mobile ul{
+        nav.menu-mobile ul{
             /*display: initial;*/
             list-style: none;
             width: 100%;
-            position: absolute;
-            top: 80px;
-            left: 0;
         }
-        header .mobile ul li{
+        nav.menu-mobile ul li{
             display: inline-block;
             width: 100%;
             padding: 3px 0;
             text-align: center;
+            background-color: rgb(250, 250, 250);
         }
-        header .mobile ul li a{
+        nav.menu-mobile ul li a{
             color: #b4b4b4;
+            width: 100%;
             text-decoration: none;
             font-size: 14px;
             text-transform: uppercase;
+            display: inline-block;
+        }
+        nav.menu-mobile ul li a:hover{
+            background-color: rgb(200, 200, 200);
+            color: white; 
         }
     }
     /*580px*/
@@ -423,6 +430,17 @@ section.formulario > h2{
     color: #698293;
     text-align: center;
 }
+section.formulario > .box-sucess{
+    display: none;
+    position: relative;
+    top: -40px;
+    text-align: center;
+    max-width: 500px;
+    color: white;
+    background-color: rgb(90, 224, 182);
+    padding: 3px 10px;
+    margin: 0 auto;
+}
 section.formulario form{
     width: 100%;
     max-width: 500px;
@@ -434,9 +452,10 @@ form div:last-child{text-align: center;}
     color: #b4b4b4;
     padding: 10px;
 }
-.wrapper-form span{
+.wrapper-form p{
     font-size: 15px;
 }
+
 .wrapper-form [type=text],
 .wrapper-form [type=email],
 .wrapper-form [type=tel]{
@@ -464,3 +483,53 @@ form div:last-child{text-align: center;}
     display: inline-block;
 }
         /* Aqui finaliza a sessão Formulário */
+
+        /* Aqui inicia o Footer 01 */
+footer.footer-01{
+    background-color: #688293;
+    padding: 40px 2%;
+}
+.wrapper-footer{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+.wrapper-footer h2{
+    color: white;
+    font-size: 18px;
+    font-weight:normal;
+    margin-bottom: 8px;
+}
+.wrapper-footer p{
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 21px;
+}
+    /*Responsivo: Footer-01*/
+    /*580px*/
+    @media screen and (max-width: 580px){
+        .wrapper-footer{
+            width: 100%;
+            float: none;
+            display: inline-block;
+
+        }
+        .footer-01 .wrapper-footer:not(:nth-of-type(3)){
+            margin-bottom: 30px;
+        }
+    }
+        /* Aqui termina o Footer 01 */
+
+        /* Aqui inicia o Footer 02 */
+footer.footer-02{
+    padding: 20px 0;
+    background-color: #576975;
+    text-align: center;
+}
+footer.footer-02 h3{
+    color: white;
+    font-size: 16px;
+}
+
+        /* Aqui termina o Footer 02 */
