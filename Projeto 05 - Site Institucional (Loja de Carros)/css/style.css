@@ -234,7 +234,6 @@ section.container-banner .cta{
         }
     }
     /**/
-
     /*580px*/
     @media screen and (max-width: 580px){
         section.container-banner{
@@ -306,6 +305,8 @@ section.destaque-veiculos{padding: 90px 2%;}
             display: inline-block;
         }
     }
+    /**/
+    /*580px*/
     @media screen and (max-width: 580px){
         .destaque-text h2{
             font-size: 20px;
@@ -410,6 +411,7 @@ section.servicos-depoimentos{
             padding: 90px 60px;
         }
     }
+    /**/
     /*855*/
     @media screen and (max-width: 855px){
         .half1, .half2{
@@ -430,12 +432,14 @@ section.servicos-depoimentos{
             margin-top: 0;
         }
     }
+    /**/
     /*768*/
     @media screen and (max-width: 768px){
         .half1, .half2{
             padding: 30px 20px;
         }
     }
+    /**/
     /*580*/
     @media screen and (max-width: 580px){
         .half1, .half2{
@@ -455,7 +459,19 @@ section.servicos-depoimentos{
 
 /* Aqui inicia a sessão formulário para contato */
 section.formulario{
-    padding: 90px 2%;
+    padding: 90px 2% 30px 2%;
+}
+h2.box-sucess{
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    padding: 5px 0;
+    background-color: #5fb382;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 auto;
 }
 .contato-text{
     text-align: center;
@@ -500,8 +516,9 @@ section.formulario textarea{
     width: 100%;
     height: 140px;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 25px;
     padding-left: 10px;
+    padding-top: 10px;
     border: 1px solid #cccccc;
     resize: none;
 }
@@ -519,7 +536,60 @@ section.formulario input[type=submit]{
         }
         section.formulario form .w50{ width: 100%;}
     }
+    /**/
 /* Aqui termina a sessão formulário para contato */
+
+            /* Aqui inicia o Footer */
+footer{
+    padding: 40px 2%;
+    background: #252525;
+}
+footer ul{
+    list-style-type: none;
+    float: left;
+}
+footer li{
+    float: left;
+    padding: 0 40px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
+footer .selected a{
+    color: #EB2D2D;
+}
+footer p{
+    float: right;
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+}
+
+    /*Responsivo: Footer*/
+    /*900px*/
+    @media screen and (max-width: 900px){
+        footer{
+            text-align: center;
+        }
+        footer ul{
+            display: none;
+        }
+        footer p{
+            width: 100%;
+            float: none;
+            display: inline-block;
+        }
+    }
+    /*768px*/
+    @media screen and (max-width: 768px){
+        footer{
+            padding: 30px 2%;
+        }
+    }
+            /* Aqui termina o Footer */
 
             /** Fim da página Home **/
 

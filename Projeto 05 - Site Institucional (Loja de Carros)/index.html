@@ -119,7 +119,7 @@
             <h2>contato</h2>
         </div><!--Contato-Text-->
         <div class="center">
-            
+            <h2 class="box-sucess">Enviado com sucesso!!</h2>
             <form>
                 <div class="wrapper-form w100">
                     <input type="text" name="nome" placeholder="Nome*">
@@ -141,6 +141,19 @@
         </div><!--Center-->
     </section><!--Formulário-->
 
+    <footer>
+        <div class="center">
+            <ul>
+                <li class="selected"><a href="index.html">Home</a></li>
+                <li><a href="">Venda</a></li>
+                <li><a href="">Sobre Nós</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+            <p>Todos os direitos reservados</p>
+            <div class="clear"></div>
+        </div><!--Center-->
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <!-- Função para menu mobile -->
@@ -152,5 +165,55 @@
         })
     </script>
     <!---->
+
+    <!--Função de feedback para Formulário-->
+    <script>
+        $(function(){
+            $('form').submit(function(){
+                var erro = false;
+                var nome = $('[type=text]').val();
+                var email = $('[type=email]').val();
+                var tel = $('[type=tel]').val();
+                var text = $('[name=mensagem]').val();
+            resetForm();
+                
+                if(nome == ''){
+                    erro = true;
+                    var el = $('[type=text]');
+                    el.css('border','1px solid red');
+                }
+                if(email == ''){
+                erro = true;
+                    var el = $('[type=email]');
+                    el.css('border','1px solid red');
+                }
+                if(tel == ''){
+                erro = true;
+                    var el = $('[type=tel]');
+                    el.css('border','1px solid red');
+                }
+                if(text == ''){
+                erro = true;
+                    var el = $('[name=mensagem]');
+                    el.css('border','1px solid red');
+                }
+
+            if(erro == false){
+                $('.box-sucess').fadeIn(function(){
+                    setTimeout(function(){
+                        $('.box-sucess').fadeOut();
+                    },5000);
+                });
+                $(this)[0].reset();
+            }
+
+                return false;
+            })
+            function resetForm(){
+                $('input[type=text],[type=email],[type=tel],[name=mensagem]').css('border','1px solid #dadada');
+                $('p').css('color','#b4b4b4');
+            }
+        })
+    </script>
 </body>
 </html>
