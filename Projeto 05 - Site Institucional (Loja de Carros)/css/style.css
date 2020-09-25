@@ -26,6 +26,8 @@ body,html{
     font-style: italic;
     border-bottom: 5px solid #B21E1E;
 }
+.w100{width: 100%;}
+.w50{width: 50%;}
                     /***...***/
 
             /** Inicio da página Home **/
@@ -450,6 +452,74 @@ section.servicos-depoimentos{
         }
     }
 /* Aqui termina a sessão Serviços e Depoimentos */
+
+/* Aqui inicia a sessão formulário para contato */
+section.formulario{
+    padding: 90px 2%;
+}
+.contato-text{
+    text-align: center;
+}
+.contato-text h2{
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    background: white;
+    padding: 0 20px;
+    font-style: italic;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+.contato-text .ln1{
+    height: 2px;
+    background-color: black;
+}
+
+section.formulario .center{
+    text-align: center;
+}
+section.formulario form{
+    max-width: 600px;
+    margin: 30px auto;
+}
+section.formulario form .wrapper-form{
+    float: left;
+    padding: 15px 10px;
+}
+section.formulario input[type=text],
+section.formulario input[type=email],
+section.formulario input[type=tel]{
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 10px;
+    border: 1px solid #cccccc;
+}
+section.formulario textarea{
+    width: 100%;
+    height: 140px;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 10px;
+    border: 1px solid #cccccc;
+    resize: none;
+}
+section.formulario input[type=submit]{
+    font-size: 16px;
+    border: 0;
+    border-bottom: 5px solid #B21E1E;
+}
+
+    /*Responsivo: Formulário*/
+    /*580px*/
+    @media screen and (max-width: 580px){
+        .contato-text h2{
+            font-size: 23px;
+        }
+        section.formulario form .w50{ width: 100%;}
+    }
+/* Aqui termina a sessão formulário para contato */
 
             /** Fim da página Home **/
 
