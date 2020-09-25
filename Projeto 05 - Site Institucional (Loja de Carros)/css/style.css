@@ -15,7 +15,17 @@ body,html{
     max-width: 1280px;
     margin: 0 auto;
 }
-
+.btn1{
+    width: 150px;
+    line-height: 40px;
+    background-color: #EB2D2D;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    border-bottom: 5px solid #B21E1E;
+}
                     /***...***/
 
             /** Inicio da página Home **/
@@ -279,15 +289,6 @@ section.destaque-veiculos{padding: 90px 2%;}
     margin-top: 10px;
 }
 .car-single a{
-    width: 150px;
-    line-height: 40px;
-    background-color: #EB2D2D;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    color: white;
-    font-style: italic;
-    border-bottom: 5px solid #B21E1E;
     margin-top: 8px;
 }
     /*Responsivo: Destaque-veículos*/
@@ -317,6 +318,139 @@ section.destaque-veiculos{padding: 90px 2%;}
             display: inline-block;
         }
     }
-/* Aqui inicia a sessão dos Veículos em Destaque */
+/* Aqui termina a sessão dos Veículos em Destaque */
+
+
+/* Aqui inicia a sessão Serviços e Depoimentos */
+section.servicos-depoimentos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.half1{
+    width: 50%;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+    text-align: center;
+}
+.half1-wrapper{
+    text-align: left;
+    display: inline-block;
+}
+.half1-wrapper h2{
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+}
+.half1-wrapper ul{
+    list-style-position: inside;
+    display: inline-block;
+    margin-top: 20px;
+}
+.half1-wrapper li{
+    font-size: 16px;
+    font-weight: normal;
+}
+.half1-wrapper a{
+    margin-left: 40px;
+    vertical-align: bottom;
+}
+
+
+.half2{
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #EB2D2D;
+    color: white;
+    text-align: center;
+}
+.half2-wrapper{
+    text-align: left;
+    display: inline-block;
+}
+.half2-wrapper h2{
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.half2-wrapper p{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.half2-wrapper div img{
+    float: left;
+    width: 15px;
+    height: 25px;
+    margin: 20px;
+}
+.half2-wrapper div p{
+    color: #252525;
+    float: right;
+    font-size: 23px;
+    margin-top: 18px;
+}
+
+
+    /*Responsivo: Serviços e Depoimentos*/
+    /*1100*/
+    @media screen and (max-width: 1100px){
+        .half1-wrapper ul{
+            display: inline;
+        }
+        .half1-wrapper a{
+            margin-left: 0;
+            vertical-align: none;
+            margin-top: 20px;
+        }
+        .half2{
+            width: 50%;
+            padding: 90px 60px;
+        }
+    }
+    /*855*/
+    @media screen and (max-width: 855px){
+        .half1, .half2{
+            padding: 60px 50px;
+        }
+        .half2-wrapper p{
+            margin-bottom: 20px;
+        }
+        .half2-wrapper div{text-align: center;}
+        .half2-wrapper div img{
+            float: none;
+            display: inline-block;
+            margin: 0 20px;
+        }
+        .half2-wrapper div p{
+            float: none;
+            display: inline-block;
+            margin-top: 0;
+        }
+    }
+    /*768*/
+    @media screen and (max-width: 768px){
+        .half1, .half2{
+            padding: 30px 20px;
+        }
+    }
+    /*580*/
+    @media screen and (max-width: 580px){
+        .half1, .half2{
+            width: 100%;
+            padding: 35px 30px;
+        }
+        .half2-wrapper div img{
+            float: left;
+            margin: 0 20px;
+        }
+        .half2-wrapper div p{
+            float: right;
+            margin-top: 0;
+        }
+    }
+/* Aqui termina a sessão Serviços e Depoimentos */
 
             /** Fim da página Home **/
+
+            
