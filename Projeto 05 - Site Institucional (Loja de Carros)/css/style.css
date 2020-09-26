@@ -26,6 +26,30 @@ body,html{
     font-style: italic;
     border-bottom: 5px solid #B21E1E;
 }
+/*Títulos*/
+.titulos{text-align: center;}
+.titulos h2{
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    background: white;
+    padding: 0 20px;
+    font-style: italic;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+.titulos .ln1{
+    height: 2px;
+    background-color: black;
+}
+   /*Responsivo: Formulário*/
+    /*580px*/
+    @media screen and (max-width: 580px){
+        .titulos h2{
+            font-size: 23px;
+        }
+    }
+/**/
 .w100{width: 100%;}
 .w50{width: 50%;}
                     /***...***/
@@ -248,20 +272,6 @@ section.container-banner .cta{
 
 /* Aqui inicia a sessão dos Veículos em Destaque */
 section.destaque-veiculos{padding: 90px 2%;}
-.destaque-text{text-align: center;}
-.destaque-text h2{
-    position: relative;
-    top: -20px;
-    display: inline-block;
-    background: white;
-    padding: 0 20px;
-    font-style: italic;
-    font-size: 27px;
-}
-.destaque-text .ln1{
-    height: 2px;
-    background-color: black;
-}
 .destaque-cars{
     margin: 0 auto;
     
@@ -473,23 +483,6 @@ h2.box-sucess{
     font-style: italic;
     margin: 0 auto;
 }
-.contato-text{
-    text-align: center;
-}
-.contato-text h2{
-    position: relative;
-    top: -20px;
-    display: inline-block;
-    background: white;
-    padding: 0 20px;
-    font-style: italic;
-    font-size: 27px;
-    text-transform: uppercase;
-}
-.contato-text .ln1{
-    height: 2px;
-    background-color: black;
-}
 
 section.formulario .center{
     text-align: center;
@@ -531,7 +524,7 @@ section.formulario input[type=submit]{
     /*Responsivo: Formulário*/
     /*580px*/
     @media screen and (max-width: 580px){
-        .contato-text h2{
+        .titulos h2{
             font-size: 23px;
         }
         section.formulario form .w50{ width: 100%;}
@@ -593,4 +586,166 @@ footer p{
 
             /** Fim da página Home **/
 
+
+
+
+            /** Início da página Vendas **/
+
+/*  Aqui inicia a sessão de Vendas de Automóveis  */
+
+section.car-store{
+    padding: 90px 2%;
+}
+
+/** Sidebar **/
+.sidebar{
+    width: 30%;
+    float: left;
+}
+
+/*$ Price bar $*/
+.sidebar .price-wrapper{
+    padding: 20px 0;
+}
+.sidebar .price-wrapper h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+}
+
+.sidebar .bar-price{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.sidebar .bar-price .fill-price{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
+    border-radius: 20px;
+}
+.sidebar .fill-price .price-button{
+    position: absolute;
+    top: -3px;
+    left: calc(100% - 13px);
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
+    border: 1px solid #777;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.price-range p{font-size:15px;}
+.price-range p:nth-of-type(1){
+    float: left;
+}
+.price-range p:nth-of-type(2){
+    float: right;
+}
+
+/*$ ... $*/
+
+/*# Year Range #*/
+.sidebar .year-wrapper{
+    padding: 20px 0;
+}
+.sidebar .year-wrapper h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+}
+
+.year-wrapper .years-range form{
+    padding: 10px 0;
+}
+.years-range .range-wrapper{
+    padding: 8px 0;
+}
+.range-wrapper input[type=checkbox]{display: none;}
+.range-wrapper label{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: inline-block;
+}
+.range-wrapper span{
+    font-size: 15px;
+    padding: 0 5px;
+    vertical-align: top;
+}
+
+    /*Responsivo: Range-Wrapper*/
+    /*768px*/
+    @media screen and (max-width: 768px){
+        .years-range form{
+            text-align: left;
+            display: inline-block;
+        }
+    }
+
+/*# ... #*/
+
+/** ... **/
+
+/*@ Wrapper-Store @*/
+
+section.car-store .wrapper-store{
+    width: 70%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper-store .car-single{
+    margin-bottom: 25px;
+}
+    /*Responsivo: wrapper-store*/
+    /*1080px*/
+    @media screen and (max-width: 1080px){
+        .wrapper-store .car-single{
+            width: 50%;
+            float: left;
+            padding: 0 10px;
+        }
+    }
+    /**/
+    /*580px*/
+    @media screen and (max-width: 580px){
+        .wrapper-store .car-single{
+            width: 100%;
+            float: none;
+            display: inline-block;
+            padding: 30px 2%;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+    /**/
+/*@ ... @*/
+
+    /*Responsivo: Car-Store*/
+    /*768px*/
+    @media screen and (max-width: 768px){
+        .car-store{
+            text-align: center;
+        }
+        .sidebar{
+            width: 100%;
+            max-width: 500px;
+            float: none;
+            display: inline-block;
             
+        }
+        section.car-store .wrapper-store{
+            width: 100%;
+            float: none;
+        }
+    }
+ /* Aqui termina a sessão de Vendas de Automóveis */
+            
+            /** Fim da página Vendas **/
