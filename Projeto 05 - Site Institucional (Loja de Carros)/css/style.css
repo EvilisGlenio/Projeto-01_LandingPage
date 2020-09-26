@@ -668,12 +668,30 @@ section.car-store{
 }
 .range-wrapper input[type=checkbox]{display: none;}
 .range-wrapper label{
+    cursor: pointer;
     width: 20px;
     height: 20px;
     border: 1px solid #ccc;
     border-radius: 3px;
     display: inline-block;
+    position: relative;
 }
+.circle{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 4px;
+}
+
+.range-wrapper input[type=checkbox]:checked + label > .circle{
+    display: block;
+}
+
 .range-wrapper span{
     font-size: 15px;
     padding: 0 5px;
@@ -749,3 +767,20 @@ section.car-store .wrapper-store{
  /* Aqui termina a sessão de Vendas de Automóveis */
             
             /** Fim da página Vendas **/
+
+
+        /** Inicio da página Mais Detalhes **/
+section.selected-car .center{
+    max-width: 1080px;
+}
+.wrapper-car{
+    width: 60%;
+    float: left;
+}
+
+.wrapper-info{
+    width: 40%;
+    float: left;
+}
+
+        /**  Fim da página Mais Detalhes  **/
