@@ -770,17 +770,46 @@ section.car-store .wrapper-store{
 
 
         /** Inicio da página Mais Detalhes **/
+section.selected-car{
+    padding: 40px 2%;
+}
 section.selected-car .center{
     max-width: 1080px;
 }
+/*# Wrapper-Car #*/
 .wrapper-car{
     width: 60%;
     float: left;
+    padding: 20px 10px;
+}
+.wrapper-car .car{
+    width: 100%;
+    padding-top: 60%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
+.galeria-img{
+    width: 200%;
+}
+.galeria-img .img-single{
+    width: ;
+}
+/*#...#*/
+
+/*& Wrapper-Info &*/
 .wrapper-info{
     width: 40%;
     float: left;
+    padding: 20px 10px;
+}
+.wrapper-info p{
+    padding: 20px 0;
+}
+.wrapper-info ul{
+    list-style-position: inside;
+    margin-bottom: 20px;
 }
 
         /**  Fim da página Mais Detalhes  **/
