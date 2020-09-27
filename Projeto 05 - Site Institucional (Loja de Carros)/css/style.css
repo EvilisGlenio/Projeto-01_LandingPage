@@ -42,7 +42,7 @@ body,html{
     height: 2px;
     background-color: black;
 }
-   /*Responsivo: Formulário*/
+   /*Responsivo: Títulos*/
     /*580px*/
     @media screen and (max-width: 580px){
         .titulos h2{
@@ -771,45 +771,94 @@ section.car-store .wrapper-store{
 
         /** Inicio da página Mais Detalhes **/
 section.selected-car{
-    padding: 40px 2%;
+    padding: 80px 2% 0 2%;
 }
 section.selected-car .center{
-    max-width: 1080px;
+    max-width: 1280px;
+    padding: 40px 0;
+    text-align: center;
 }
 /*# Wrapper-Car #*/
 .wrapper-car{
+    display: inline-block;
     width: 60%;
-    float: left;
-    padding: 20px 10px;
 }
 .wrapper-car .car{
     width: 100%;
-    padding-top: 60%;
+    padding-top: 70%;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
-
-.galeria-img{
-    width: 200%;
+.wrapper-galeria-parent{
+    width: 100%;
+    padding: 36px;
+    background: green;
+    position: relative;
 }
-.galeria-img .img-single{
-    width: ;
+.nav-arrow-left{
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    background-image: url(../images/arrow-left.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.nav-arrow-right{
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    background-image: url(../images/arrow-right.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 22px;
+    cursor: pointer;
+}
+.wrapper-galeria{
+    overflow: hidden;
+    width: 100%;
+}
+.galeria-img{
+    width: 100%;
+}
+.galeria-img-wrapper{width: 200%;}
+.img-single{
+    width: calc(33.3% * (100 / 200));
+    padding-top: calc(33.3% * (100 / 200) * 0.6);
+    float: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    cursor: pointer;
 }
 /*#...#*/
 
 /*& Wrapper-Info &*/
 .wrapper-info{
-    width: 40%;
-    float: left;
-    padding: 20px 10px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    text-align: left;
 }
 .wrapper-info p{
-    padding: 20px 0;
+    max-width: 200px;
+    margin-top: 25px;
+    font-size: 17px;
 }
 .wrapper-info ul{
     list-style-position: inside;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    max-width: 200px;
+    
 }
 
         /**  Fim da página Mais Detalhes  **/
