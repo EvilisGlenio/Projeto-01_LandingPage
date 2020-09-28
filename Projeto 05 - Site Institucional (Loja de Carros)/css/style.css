@@ -783,17 +783,29 @@ section.selected-car .center{
     display: inline-block;
     width: 60%;
 }
+.info-bread{text-align: left; padding: 15px 0;}
+.info-bread a{
+    text-decoration: none;
+    color: black;
+}
+.info-bread span:last-child{
+    color: red;
+}
+.info-bread span{
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
 .wrapper-car .car{
     width: 100%;
     padding-top: 70%;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .wrapper-galeria-parent{
     width: 100%;
     padding: 36px;
-    background: green;
     position: relative;
 }
 .nav-arrow-left{
@@ -830,16 +842,28 @@ section.selected-car .center{
     width: 100%;
 }
 .galeria-img-wrapper{width: 200%;}
-.img-single{
-    width: calc(33.3% * (100 / 200));
-    padding-top: calc(33.3% * (100 / 200) * 0.6);
+.img-single-wraper{
     float: left;
-    background-size: cover;
+    padding: 4px;
+    width: calc(33.3% * (100 / 200));
+}
+.img-single{
+    width: 100%;
+    padding-top: 70%;    
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border: 5px solid white;
     cursor: pointer;
 }
+
+    /*Responsivo: Wraper-car*/
+    /*768px*/
+    @media screen and (max-width: 768px){
+        .wrapper-car{
+            width: 100%;
+        }
+    }
 /*#...#*/
 
 /*& Wrapper-Info &*/
@@ -860,5 +884,25 @@ section.selected-car .center{
     max-width: 200px;
     
 }
+
+    /*Responsivo: Wraper-info*/
+    /*768px*/
+    @media screen and (max-width: 768px){
+        .wrapper-info{
+            padding: 20px;
+            text-align: center;
+        }
+        .wrapper-info p{
+            max-width: none;
+        }
+        .wrapper-info ul{
+            list-style-position: inside;
+            max-width: 400px;  
+            margin: 30px auto;
+        }
+        .wrapper-info li{
+            text-align: left
+        }
+    }
 
         /**  Fim da página Mais Detalhes  **/

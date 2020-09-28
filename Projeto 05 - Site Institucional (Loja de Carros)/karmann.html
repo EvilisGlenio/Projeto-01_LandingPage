@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header style="border-bottom: 3px solid #EB2D2D;">
         <div class="center">
             <a href="index.html"><div class="logo"></div><!--Logo--></a>
 
             <nav class="menu-desktop">
                 <ul>
-                    <li class="selected"><a href="index.html">Home</a></li>
-                    <li><a href="loja.html">Venda</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="selected"><a href="loja.html">Venda</a></li>
                     <li><a href="">Sobre Nós</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
@@ -29,8 +29,8 @@
                 <h2><i class="fa fa-bars" aria-hidden="true"></i></h2>
 
                 <ul>
-                    <li class="selected"><a href="index.html">Home</a></li>
-                    <li><a href="loja.html">Venda</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="selected"><a href="loja.html">Venda</a></li>
                     <li><a href="">Sobre Nós</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
@@ -39,17 +39,83 @@
         </div><!--Center-->
     </header>
 
-    <section class="container-banner">
+    <section class="selected-car">
+        <div class="titulos">
+            <div class="ln1"></div><!--LN1-->
+            <h2>Karmann-Ghia 1969</h2>
+        </div><!--Títulos-->
         <div class="center">
-            <div class="cta">
-                <h2 class="h1">CONSULTORIA</h2>
-                <h2 class="h2">COMPRA</h2>
-                <h2 class="h3">VENDA</h2>
-                <h2 class="h4">rmveiculos@hotmail.com</h2>
-            </div><!--CTA-->
+
+            <div class="wrapper-car">
+
+                <div class="info-bread">
+                    <a href=""><span>Home</span><span>></span><span>Venda</span><span>></span><span>Karmann-Ghia 1969</span></a>
+                </div><!--Info-Bread-->
+
+                <div style="background-image: url(images/carro1.jpg);" class="car"></div><!--Car-->
+                
+                <div class="wrapper-galeria-parent">
+                    <div class="nav-arrow-left"></div>
+                    <div class="nav-arrow-right"></div>
+                    <div class="wrapper-galeria">
+                        <div class="galeria-img">
+                            <div class="galeria-img-wrapper">
+                                <div class="img-single-wraper"><div style="background-image: url(images/carro1.jpg); " class="img-single"></div></div>
+                                
+                                <div class="img-single-wraper"><div style="background-image: url(images/carro1.jpg); " class="img-single"></div></div>
+                                <div class="img-single-wraper"><div style="background-image: url(images/carro1.jpg); " class="img-single"></div></div>
+                                <div class="img-single-wraper"><div style="background-image: url(images/carro1.jpg); " class="img-single"></div></div>
+                                <div class="img-single-wraper"><div style="background-image: url(images/carro1.jpg); " class="img-single"></div></div>
+                                <div class="img-single-wraper"><div style="background-image: url(images/carro1.jpg); " class="img-single"></div></div>
+                            </div><!--Galeria-IMG-Wrapper-->
+                        </div><!--Galeria-Img-->
+                    </div><!--Wrapper-Galeria--> 
+                </div><!--Wrapper-galeria-parent-->
+                    <div class="clear"></div>
+            </div><!--Wrapper-Car-->
+
+            <div class="wrapper-info">
+                <h2>R$120.000,00</h2>
+                <p>O Karmann-Ghia é um automóvel esportivo produzido pela Volkswagen, projetado pela empresa italiana Carrozzeria Ghia, e construído pela empresa alemã Karmann. Foi produzido inicialmente na Alemanha, e mais tarde também no Brasil. Cerca de 445.000 Karmann-Ghias foram produzidos entre 1955 e 1975.</p>
+                <ul>
+                    <li>Ano: 1969</li>
+                    <li>Motor: 1.6 V8</li>
+                    <li>Transmissão: Transeixo com 4 marchas à frente e 1 à ré</li>
+                </ul>
+                <a class="btn1" href="">Entre em contato</a>
+            </div><!--Wrapper-Info-->
+
             <div class="clear"></div>
         </div><!--Center-->
-    </section><!--Container-Banner-->
+    </section><!--Selected-Car-->
+
+    <section class="formulario">
+        <div class="titulos">
+            <div class="ln1"></div><!--LN1-->
+            <h2>contato</h2>
+        </div><!--Títulos-->
+        <div class="center">
+            <h2 class="box-sucess">Enviado com sucesso!!</h2>
+            <form>
+                <div class="wrapper-form w100">
+                    <input type="text" name="nome" placeholder="Nome*">
+                </div><!--Wrapper-Form-->
+                <div class="wrapper-form w50">
+                    <input type="email" name="email" placeholder="E-mail*">
+                </div><!--Wrapper-Form-->
+                <div class="wrapper-form w50">
+                    <input type="tel" name="tel" placeholder="Telefone*">
+                </div><!--Wrapper-Form-->
+                <div class="wrapper-form w100">
+                    <textarea name="mensagem" placeholder="Mensagem*"></textarea>
+                </div><!--Wrapper-Form-->
+                <div class="wrapper-form w100">
+                    <input class="btn1" type="submit" name="acao" value="Enviar">
+                </div><!--Wrapper-Form-->
+            </form>
+            <div class="clear"></div>
+        </div><!--Center-->
+    </section><!--Formulário-->
 
     <section class="destaque-veiculos">
         <div class="titulos">
@@ -84,68 +150,11 @@
         </div><!--Center-->
     </section><!--Destaque-Veiculos-->
 
-    <section class="servicos-depoimentos">
-        <div class="half1">
-            <div class="half1-wrapper">
-                <h2>Serviços</h2>
-                <ul>
-                    <li>Compra</li>
-                    <li>Venda</li>
-                    <li>Consignação</li>
-                    <li>Consultoria de Veículos</li>
-                    <li>Indicação de Mecânicos e Peças</li>
-                </ul>
-                <a class="btn1" href="">Saiba mais</a>
-            </div><!--Half1-Wrapper-->
-        </div><!--half1-->
-
-        <div class="half2">
-            <div class="half2-wrapper">
-                <h2>Depoimentos</h2>
-                <p>“O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive”</p>
-                <div>
-                    <img src="images/arrow-left.png">
-                    <img src="images/arrow-right.png">
-                    <p>João da silva</p>
-                </div>
-            </div><!--Half2-Wrapper-->
-        </div><!--Half2-->
-        <div class="clear"></div>
-    </section><!--Serviços-Depoimentos-->
-
-    <section class="formulario">
-        <div class="titulos">
-            <div class="ln1"></div><!--LN1-->
-            <h2>contato</h2>
-        </div><!--Títulos-->
-        <div class="center">
-            <h2 class="box-sucess">Enviado com sucesso!!</h2>
-            <form>
-                <div class="wrapper-form w100">
-                    <input type="text" name="nome" placeholder="Nome*">
-                </div><!--Wrapper-Form-->
-                <div class="wrapper-form w50">
-                    <input type="email" name="email" placeholder="E-mail*">
-                </div><!--Wrapper-Form-->
-                <div class="wrapper-form w50">
-                    <input type="tel" name="tel" placeholder="Telefone*">
-                </div><!--Wrapper-Form-->
-                <div class="wrapper-form w100">
-                    <textarea name="mensagem" placeholder="Mensagem*"></textarea>
-                </div><!--Wrapper-Form-->
-                <div class="wrapper-form w100">
-                    <input class="btn1" type="submit" name="acao" value="Enviar">
-                </div><!--Wrapper-Form-->
-            </form>
-            <div class="clear"></div>
-        </div><!--Center-->
-    </section><!--Formulário-->
-
     <footer>
         <div class="center">
             <ul>
-                <li class="selected"><a href="index.html">Home</a></li>
-                <li><a href="loja.html">Venda</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="selected"><a href="loja.html">Venda</a></li>
                 <li><a href="">Sobre Nós</a></li>
                 <li><a href="">Contato</a></li>
             </ul>
