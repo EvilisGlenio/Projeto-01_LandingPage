@@ -25,15 +25,15 @@
                     <form>
                         <div class="form-group">
                             <span></span>
-                            <input type="text" name="Nome" placeholder="Nome completo" />
+                            <input type="text" name="nome" placeholder="Nome completo" />
                         </div><!--Form-group-->
                         <div class="form-group">
                             <span></span>
-                            <input type="email" name="email" placeholder="E-mail" />
+                            <input type="text" name="email" placeholder="E-mail" />
                         </div><!--Form-group-->
                         <div class="form-group">
                             <span></span>
-                            <input type="tel" name="telefone" placeholder="Telefone" />
+                            <input type="text" name="telefone" placeholder="Telefone" />
                         </div><!--Form-group-->
                         <div class="box-sucess">Obrigado por nos escolher!</div>
                         <div class="form-group">
@@ -97,50 +97,7 @@
             </div><!-- Center -->
         </footer>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script>
-            $(function(){
-                $('form').submit(function(){
-                    var erro = false;
-                    var nome = $('[name="Nome"]').val();
-                    var email = $('[name="email"]').val();
-                    var tel = $('[name="telefone"]').val();
-                    resetForm();
-                    if(nome == ''){
-                        erro = true;
-                        var el = $('[name="Nome"]');
-                        el.parent().find('span').html('Por favor insira seu nome!')
-                        el.css('border','2px solid red');
-                    }
-                    if(email == ''){
-                        erro = true;
-                        var el = $('[name="email"]');
-                        el.parent().find('span').html('Por favor insira um email!');
-                        el.css('border','2px solid red');
-                    }
-                    if(tel == ''){
-                        erro = true;
-                        var el = $('[name="telefone"]');
-                        el.parent().find('span').html('Por favor insira um telefone!');
-                        el.css('border','2px solid red');
-                    }
-
-                    if(erro == false){
-                        $('.box-sucess').fadeIn(function(){
-                            setTimeout(function(){
-                                $('.box-sucess').fadeOut();
-                            }, 5000);
-                        });
-                        $(this)[0].reset();
-                    }
-
-                    return false;
-                })
-                function resetForm(){
-                    $('span').html('');
-                    $('input[type=text],input[type=email],input[type=tel]').css('border','1px solid #ccc');
-                }
-            })
-        </script>
+        <script src="js/jquery.js"></script>
+        <script src="js/functions.js"></script>
     </body>
 </html>
