@@ -22,7 +22,7 @@
                     <li class="selected"><a href="index.html">Home</a></li>
                     <li><a href="loja.html">Venda</a></li>
                     <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav><!--Menu-Desktop-->
         
@@ -33,7 +33,7 @@
                     <li class="selected"><a href="index.html">Home</a></li>
                     <li><a href="loja.html">Venda</a></li>
                     <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav><!--Menu-Mobile-->
             <div class="clear"></div>
@@ -114,7 +114,7 @@
         <div class="clear"></div>
     </section><!--Serviços-Depoimentos-->
 
-    <section class="formulario">
+    <section id="contato" class="formulario">
         <div class="titulos">
             <div class="ln1"></div><!--LN1-->
             <h2>contato</h2>
@@ -155,66 +155,9 @@
         </div><!--Center-->
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-    <!-- Função para menu mobile -->
-    <script>
-        $(function(){
-            $('nav.menu-mobile h2').click(function(){
-                $('nav.menu-mobile ul').slideToggle();
-            });
-        })
-    </script>
-    <!---->
-
-    <!--Função de feedback para Formulário-->
-    <script>
-        $(function(){
-            $('form').submit(function(){
-                var erro = false;
-                var nome = $('[type=text]').val();
-                var email = $('[type=email]').val();
-                var tel = $('[type=tel]').val();
-                var text = $('[name=mensagem]').val();
-            resetForm();
-                
-                if(nome == ''){
-                    erro = true;
-                    var el = $('[type=text]');
-                    el.css('border','1px solid red');
-                }
-                if(email == ''){
-                erro = true;
-                    var el = $('[type=email]');
-                    el.css('border','1px solid red');
-                }
-                if(tel == ''){
-                erro = true;
-                    var el = $('[type=tel]');
-                    el.css('border','1px solid red');
-                }
-                if(text == ''){
-                erro = true;
-                    var el = $('[name=mensagem]');
-                    el.css('border','1px solid red');
-                }
-
-            if(erro == false){
-                $('.box-sucess').fadeIn(function(){
-                    setTimeout(function(){
-                        $('.box-sucess').fadeOut();
-                    },5000);
-                });
-                $(this)[0].reset();
-            }
-
-                return false;
-            })
-            function resetForm(){
-                $('input[type=text],[type=email],[type=tel],[name=mensagem]').css('border','1px solid #dadada');
-                $('p').css('color','#b4b4b4');
-            }
-        })
-    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/menuMobile.js"></script>
+    <script src="js/formFeedback.js"></script>
+    <script src="js/menuScroll.js"></script>
 </body>
 </html>
