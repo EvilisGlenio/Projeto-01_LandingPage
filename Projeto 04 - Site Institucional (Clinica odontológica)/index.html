@@ -19,10 +19,10 @@
 
         <nav class="desktop">
             <ul>
-                <li><a href="">quem sou</a></li>
-                <li><a href="">tratamentos</a></li>
-                <li><a href="">depoimentos</a></li>
-                <li><a href="">contato</a></li>
+                <li><a href="#sobre">quem sou</a></li>
+                <li><a href="#tratamentos">tratamentos</a></li>
+                <li><a href="#depoimentos">depoimentos</a></li>
+                <li><a href="#contato">contato</a></li>
             </ul>
         </nav><!--Desktop-->
         <nav class="mobile">
@@ -33,9 +33,9 @@
     <nav class="menu-mobile">
         <ul>
             <li><a href="">quem sou</a></li>
-            <li><a href="">tratamentos</a></li>
-            <li><a href="">depoimentos</a></li>
-            <li><a href="">contato</a></li>
+            <li><a href="#tratamentos">tratamentos</a></li>
+            <li><a href="#depoimentos">depoimentos</a></li>
+            <li><a href="#contato">contato</a></li>
         </ul>
     </nav><!--Menu-Mobile-->
 
@@ -92,7 +92,7 @@
         </div><!--Center-->
     </section><!--Servico-->
 
-    <section class="perfil-container">
+    <section id="sobre" class="perfil-container">
         <div class="center">
             <div class="wrapper-perfil-1">
                 <div class="wrapper-perfil-2">
@@ -125,7 +125,7 @@
         </div><!--Center-->
     </section><!--Vídeos-->
 
-    <section class="tratamentos">
+    <section id="tratamentos" class="tratamentos">
         <h2>Tratamentos</h2>
         <div class="center">
             <div class="wrapper-tratamentos">
@@ -182,7 +182,7 @@
         </div><!--Center-->
     </section><!--Tratamentos-->
 
-    <section class="depoimentos">
+    <section id="depoimentos" class="depoimentos">
         <h2>Depoimentos</h2>
         <div class="center">
             <div class="single-depoimento">
@@ -224,7 +224,7 @@
         </div><!--Center-->
     </section><!--Social-->
 
-    <section class="formulario">
+    <section id="contato" class="formulario">
         <div class="box-sucess">Enviado com sucesso</div><!--Box-Sucess-->
         <h2>Contato</h2>
         <div class="center">
@@ -278,70 +278,10 @@
         <h3>danki.code</h3>
     </footer><!--Footer-02-->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-    <!--Função para descer o menu mobile-->
-    <script>
-        $(function(){
-            $('nav.mobile i').click(function(){
-                $('nav.menu-mobile ul').slideToggle();
-            })
-        })
-    </script>
-    <!--...-->
-
-    <!--Função de feedback para Formulário-->
-    <script>
-        $(function(){
-          $('form').submit(function(){
-              var erro = false;
-              var nome = $('[type=text]').val();
-              var email = $('[type=email]').val();
-              var tel = $('[type=tel]').val();
-              var text = $('[name=mensagem]').val();
-            resetForm();
-              
-              if(nome == ''){
-                  erro = true;
-                  var el = $('[type=text]');
-                  el.parent().find('p').css('color','red');
-                  el.css('border','1px solid red');
-              }
-              if(email == ''){
-                erro = true;
-                  var el = $('[type=email]');
-                  el.parent().find('p').css('color','red');
-                  el.css('border','1px solid red');
-              }
-              if(tel == ''){
-                erro = true;
-                  var el = $('[type=tel]');
-                  el.parent().find('p').css('color','red');
-                  el.css('border','1px solid red');
-              }
-              if(text == ''){
-                erro = true;
-                  var el = $('[name=mensagem]');
-                  el.parent().find('p').css('color','red');
-                  el.css('border','1px solid red');
-              }
-
-            if(erro == false){
-              $('.box-sucess').fadeIn(function(){
-                  setTimeout(function(){
-                      $('.box-sucess').fadeOut();
-                  },5000);
-              });
-              $(this)[0].reset();
-            }
-
-              return false;
-          })
-          function resetForm(){
-              $('input[type=text],[type=email],[type=tel],[name=mensagem]').css('border','1px solid #dadada');
-              $('p').css('color','#b4b4b4');
-          }
-        })
-    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/menuMobile.js"></script>
+    <script src="js/formFeedback.js"></script>
+    <script src="js/menuScroll.js"></script>
+    
 </body>
 </html>
