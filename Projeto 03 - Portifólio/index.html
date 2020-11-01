@@ -19,18 +19,18 @@
             <nav class="desktop">
                 <ul>
                     <li><a href="">home</a></li>
-                    <li><a href="">serviços</a></li>
-                    <li><a href="">sobre</a></li>
-                    <li><a href="">contato</a></li>
+                    <li><a href="#servicos">serviços</a></li>
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
             </nav><!--Desktop-->
             <nav class="mobile">
                 <h2><i class="fa fa-bars" aria-hidden="true"></i></h2>
                 <ul>
                     <li><a href="">home</a></li>
-                    <li><a href="">serviços</a></li>
-                    <li><a href="">sobre</a></li>
-                    <li><a href="">contato</a></li>
+                    <li><a href="#servicos">serviços</a></li>
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
             </nav><!--Mobile-->
             <div class="clear"></div><!--Clear-->
@@ -43,7 +43,7 @@
         </div><!--Center-->
     </header>
 
-    <section class="services">
+    <section id="servicos" class="services">
         <div class="center">
             <div class="services-wrapper">
                 <div class="cta">
@@ -55,14 +55,14 @@
                         <li>Sistemas</li>
                     </ul>
                     <br>
-                    <a href="#">Entre em contato</a>
+                    <a href="#contato">Entre em contato</a>
                 </div><!--CTA-->
                 <div class="device"></div>
             </div><!--Services-Wrapper-->
         </div><!--Center-->
     </section><!--Services-->
 
-    <section class="section-2">
+    <section id="sobre" class="section-2">
         <div class="center">
             <h2>Desenvolvido de pessoas para pessoas</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien. Ut tempus pulvinar ante, at euismod orci commodo suscipit. Nunc ut viverra dui. Ut efficitur cursus diam a volutpat. Sed sagittis pharetra dolor, ac mollis sapien condimentum vitae. Ut in interdum tortor.</p>
@@ -101,7 +101,7 @@
         <div class="clear"></div>
     </section><!--Section-3-->
 
-    <section class="section-4">
+    <section id="contato" class="section-4">
         <div class="center">
             <div class="form w50">
                 <h2>Entre em contato</h2>
@@ -143,59 +143,9 @@
         </div><!--Center-->
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-    <script>
-        $(function(){
-            $('nav.mobile h2').click(function(){
-                $('nav.mobile ul').slideToggle();
-            })
-        })
-    </script>
-
-    <script>
-        $(function(){
-            $('form').submit(function(){
-                var erro = false;
-                var nome = $('[type=text]').val();
-                var email = $('[type=email]').val();
-                var duvida = $('[name=duvida]').val();
-                resetForm();
-
-                if(nome == ''){
-                    erro = true;
-                    var el = $('[type=text]');
-                    el.parent().find('span').html('Por favor insira seu nome.');
-                    el.css('border','2px solid red');
-                }
-                if(email == ''){
-                    erro = true;
-                    var el = $('[type=email]');
-                    el.parent().find('span').html('Por favor insira seu E-mail.');
-                    el.css('border','2px solid red');
-                }
-                if(duvida == ''){
-                    erro = true;
-                    var el = $('[name=duvida]');
-                    el.parent().find('span').html('Por favor insira sua duvida.');
-                    el.css('border','2px solid red');
-                }
-
-                if(erro == false){
-                    $('.box-sucess').fadeIn(function(){
-                        setTimeout(function(){
-                            $('.box-sucess').fadeOut();
-                        }, 5000);
-                    });
-                    $(this)[0].reset();
-                }
-                return false;
-            })
-            function resetForm(){
-                $('input[type=text],[type=email],[name=duvida]').css('border','1px solid #ccc')
-                $('span').html('');
-            }
-        })
-    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/formFeedback.js"></script>
+    <script src="js/menuMobile.js"></script>
+    <script src="js/menuScroll.js"></script>
 </body>
 </html>
