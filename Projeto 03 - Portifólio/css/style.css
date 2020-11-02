@@ -164,9 +164,10 @@ section.section-2 img{
 section.section-3{
     width: 100%;
 }
-.team-wrapper{display: flex; flex-wrap: wrap;}
 /*Team-Text*/
 .team-text{
+    float: left;
+    width: 50%;
     background: #835FA7;
     color: white;
     padding: 140px 0 90px 0;
@@ -186,9 +187,24 @@ section.section-3{
     line-height: 35px;
 }
 /*Team-Perfil*/
-.team-single-wrapper{
-    width: 90%;
+.team-single{
+    float: left;
+    width: 50%;
     padding: 140px 25px 90px 25px;
+    background-color: white;
+}
+.scrollEquipe{
+    max-width: 600px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+.scroll-wrapper{
+    width: 100%;
+}
+.team-single-wrapper{
+    float: left;
+    width: 100%;
+    padding: 0 20px;
 }
 .header-perfil{display: flex;}
 .header-perfil h2{
@@ -213,19 +229,19 @@ section.section-3{
     margin-bottom: 10px;
     font-size: 15px;
 }
-.team-single-wrapper .slide{
+.slide{
     width: 100%;
+    padding-left: 40px;
 }
-.team-single-wrapper .slide span{
+.slide span{
     cursor: pointer;
     width: 16px;
     height: 16px;
     border-radius: 8px;
-    background: rgb(220, 220, 220);
+    background-color: rgb(200, 200, 200);
     float: left;
     margin-right: 10px;
 }
-.team-single-wrapper .slide > .selected{background: gray;}
 
                 /* Section - section-4 */
 section.section-4{
