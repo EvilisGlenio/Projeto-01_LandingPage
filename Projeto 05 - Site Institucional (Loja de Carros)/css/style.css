@@ -624,7 +624,7 @@ section.car-store{
 }
 .sidebar .bar-price .fill-price{
     position: relative;
-    width: 30%;
+    width: 0;
     height: 100%;
     background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
     border-radius: 20px;
@@ -632,7 +632,7 @@ section.car-store{
 .sidebar .fill-price .price-button{
     position: absolute;
     top: -3px;
-    left: calc(100% - 13px);
+    left: 0;
     width: 25px;
     height: 25px;
     background: linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
