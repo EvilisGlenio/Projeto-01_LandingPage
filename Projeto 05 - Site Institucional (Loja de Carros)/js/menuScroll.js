@@ -1,10 +1,9 @@
 $(function(){
 
-    $('nav a').click(function(){
-        var href = $(this).attr('href');
-        var offSetTop = $(href).offset().top;
+    $('[goto=contato]').click(function(){
+        $('html,body').animate({'scrollTop':$('#contato').offset().top});
 
-        $('html,body').animate({'scrollTop':offSetTop},500);
+        return false;
     })
 
 });

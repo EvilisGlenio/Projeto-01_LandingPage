@@ -21,7 +21,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li class="selected"><a href="loja.html">Venda</a></li>
                     <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a goto="contato" href="">Contato</a></li>
                 </ul>
             </nav><!--Menu-Desktop-->
         
@@ -32,7 +32,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li class="selected"><a href="loja.html">Venda</a></li>
                     <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a goto="contato" href="">Contato</a></li>
                 </ul>
             </nav><!--Menu-Mobile-->
             <div class="clear"></div>
@@ -52,7 +52,7 @@
                     <a href=""><span>Home</span><span>></span><span>Venda</span><span>></span><span>Ford Mustang 1969</span></a>
                 </div><!--Info-Bread-->
 
-                <div style="background-image: url(images/carro3.jpg);" class="car"></div><!--Car-->
+                <div class="car"></div><!--Car-->
                 
                 <div class="wrapper-galeria-parent">
                     <div class="nav-arrow-left"></div>
@@ -61,7 +61,6 @@
                         <div class="galeria-img">
                             <div class="galeria-img-wrapper">
                                 <div class="img-single-wraper"><div style="background-image: url(images/carro3.jpg); " class="img-single"></div></div>
-                                
                                 <div class="img-single-wraper"><div style="background-image: url(images/carro3.jpg); " class="img-single"></div></div>
                                 <div class="img-single-wraper"><div style="background-image: url(images/carro3.jpg); " class="img-single"></div></div>
                                 <div class="img-single-wraper"><div style="background-image: url(images/carro3.jpg); " class="img-single"></div></div>
@@ -82,14 +81,14 @@
                     <li>Motor: 4.9L Windsor V8</li>
                     <li>Potência: 294 cv (216 kW) @ 5800 rpm</li>
                 </ul>
-                <a class="btn1" href="">Entre em contato</a>
+                <a  goto="contato" class="btn1" href="">Entre em contato</a>
             </div><!--Wrapper-Info-->
 
             <div class="clear"></div>
         </div><!--Center-->
     </section><!--Selected-Car-->
 
-    <section class="formulario">
+    <section id="contato" class="formulario">
         <div class="titulos">
             <div class="ln1"></div><!--LN1-->
             <h2>contato</h2>
@@ -156,7 +155,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="selected"><a href="loja.html">Venda</a></li>
                 <li><a href="">Sobre Nós</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a goto="contato" href="">Contato</a></li>
             </ul>
             <p>Todos os direitos reservados</p>
             <div class="clear"></div>
@@ -167,5 +166,6 @@
     <script src="js/menuMobile.js"></script>
     <script src="js/formFeedback.js"></script>
     <script src="js/menuScroll.js"></script>
+    <script src="js/galeriaStore.js"></script>
 </body>
 </html>

@@ -841,19 +841,24 @@ section.selected-car .center{
 .galeria-img{
     width: 100%;
 }
-.galeria-img-wrapper{width: 200%;}
+.galeria-img-wrapper{
+    /*
+        Via JS => width
+    */
+}
 .img-single-wraper{
     float: left;
-    padding: 4px;
-    width: calc(33.3% * (100 / 200));
+    padding: 9px;
+    /*
+        Via JS => width
+    */
 }
 .img-single{
     width: 100%;
     padding-top: 70%;    
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 5px solid white;
     cursor: pointer;
 }
 
