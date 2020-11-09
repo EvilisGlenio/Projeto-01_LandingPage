@@ -381,23 +381,24 @@ section.servicos-depoimentos{
     text-align: left;
     display: inline-block;
 }
-.half2-wrapper h2{
+.single-wrapper h2{
     font-size: 32px;
     font-weight: normal;
     font-style: italic;
     margin-bottom: 15px;
 }
-.half2-wrapper p{
+.single-wrapper p{
     font-size: 22px;
     margin-bottom: 8px;
 }
-.half2-wrapper div img{
+.navigator img{
     float: left;
     width: 15px;
     height: 25px;
     margin: 20px;
+    cursor: pointer;
 }
-.half2-wrapper div p{
+.single-wrapper div p{
     color: #252525;
     float: right;
     font-size: 23px;
@@ -788,7 +789,7 @@ section.selected-car .center{
     text-decoration: none;
     color: black;
 }
-.info-bread span:last-child{
+.info-bread a:last-child{
     color: red;
 }
 .info-bread span{
