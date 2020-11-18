@@ -181,13 +181,13 @@ section.servicos .center{
 
         /*Aqui inicia a sessão Perfil-Container*/
 section.perfil-container .center{
-    max-width: 800px;
+    max-width: 1000px;
     padding: 40px 0;
 }
 .wrapper-perfil-1{
     position: relative;
     width: 100%;
-    padding-top: 60%;
+    padding-top: 50%;
 }
 .wrapper-perfil-2{
     position: absolute;
