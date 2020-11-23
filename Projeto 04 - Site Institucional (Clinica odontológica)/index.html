@@ -7,9 +7,10 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
-    <title>Projeto 04</title>
+    <title>Projeto Clínica Odontológica</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
 </head>
 <body>
     <header>
@@ -26,13 +27,13 @@
             </ul>
         </nav><!--Desktop-->
         <nav class="mobile">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <img src="images/bars.png">
         </nav><!--mobile-->
         <div class="clear"></div><!--Clear-->
     </header>
     <nav class="menu-mobile">
         <ul>
-            <li><a href="">quem sou</a></li>
+            <li><a href="#sobre">quem sou</a></li>
             <li><a href="#tratamentos">tratamentos</a></li>
             <li><a href="#depoimentos">depoimentos</a></li>
             <li><a href="#contato">contato</a></li>
@@ -42,33 +43,30 @@
     <section class="mosaico">
         <div class="center">
             <div class="wrapper-mosaico">
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-            </div><!--Wrapper-Mosaico-->
-
-            <div class="wrapper-mosaico">
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-            </div><!--Wrapper-Mosaico-->
-
-            <div class="wrapper-mosaico">
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-            </div><!--Wrapper-Mosaico-->
-
-            <div class="wrapper-mosaico">
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-            </div><!--Wrapper-Mosaico-->
-
-            <div class="wrapper-mosaico">
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-            </div><!--Wrapper-Mosaico-->
-
-            <div class="wrapper-mosaico">
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
-                <div class="img-mosaico-single"></div><!--img-Mosaico-Single-->
+                <div class="mosaico-single">   
+                    <div class="img-mosaico-single"><img src="images/img1.jpeg"></div><!--img-Mosaico-Single-->
+                    <div class="img-mosaico-single"><img src="images/img2.jpeg"></div><!--img-Mosaico-Single-->
+                </div><!--Mosaico-Single-->
+                <div class="mosaico-single">   
+                    <div class="img-mosaico-single"><img src="images/img3.jpeg"></div><!--img-Mosaico-Single-->
+                    <div class="img-mosaico-single"><img src="images/img4.jpeg"></div><!--img-Mosaico-Single-->
+                </div><!--Mosaico-Single-->
+                <div class="mosaico-single">   
+                    <div class="img-mosaico-single"><img src="images/img2.jpeg"></div><!--img-Mosaico-Single-->
+                    <div class="img-mosaico-single"><img src="images/img3.jpeg"></div><!--img-Mosaico-Single-->
+                </div><!--Mosaico-Single-->
+                <div class="mosaico-single">   
+                    <div class="img-mosaico-single"><img src="images/img4.jpeg"></div><!--img-Mosaico-Single-->
+                    <div class="img-mosaico-single"><img src="images/img1.jpeg"></div><!--img-Mosaico-Single-->
+                </div><!--Mosaico-Single-->
+                <div class="mosaico-single">   
+                    <div class="img-mosaico-single"><img src="images/img1.jpeg"></div><!--img-Mosaico-Single-->
+                    <div class="img-mosaico-single"><img src="images/img4.jpeg"></div><!--img-Mosaico-Single-->
+                </div><!--Mosaico-Single-->
+                <div class="mosaico-single"> 
+                    <div class="img-mosaico-single"><img src="images/img2.jpeg"></div><!--img-Mosaico-Single-->
+                    <div class="img-mosaico-single"><img src="images/img3.jpeg"></div><!--img-Mosaico-Single-->
+                </div><!--Mosaico-Single-->
             </div><!--Wrapper-Mosaico-->
         </div><!--Center-->
     </section><!--Mosaico-->
@@ -110,18 +108,29 @@
 
     <section class="videos">
         <div class="center">
-            <div class="box-video">
-                <iframe src="https://www.youtube.com/embed/UhuoLV2u3u8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div><!--Box-Video-->
+            <div class="wrapper-box">
 
-            <div class="box-video">
-                <iframe src="https://www.youtube.com/embed/UhuoLV2u3u8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div><!--Box-Video-->
-            
-            <div class="box-video">
-                <iframe src="https://www.youtube.com/embed/UhuoLV2u3u8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div><!--Box-Video-->
-            <div class="clear"></div>
+                <div class="container-video">
+                    <div class="box-video">
+                        <iframe src="https://www.youtube.com/embed/UhuoLV2u3u8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><!--Box-Video-->
+                </div><!--Container-Vídeo-->
+
+                <div class="container-video">
+                    <div class="box-video">
+                        <iframe src="https://www.youtube.com/embed/UhuoLV2u3u8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><!--Box-Video-->
+                </div><!--Container-Vídeo-->
+
+                <div class="container-video">
+                    <div class="box-video">
+                        <iframe src="https://www.youtube.com/embed/UhuoLV2u3u8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><!--Box-Video-->
+                </div><!--Container-Vídeo-->
+
+            </div><!--Wrapper-Box-->
+        
+            <!--<div class="clear"></div>-->
         </div><!--Center-->
     </section><!--Vídeos-->
 
@@ -178,13 +187,31 @@
                     <p>Mantenha um sorriso sem doença Periodontal, livre de cálculo, cáries e outras doenças que podem ser controladas e evitadas com a ida regular ao dentista.</p>
                 </div><!--Tratamento-Single-->
             </div><!--Wrapper-Tratamentos-->
-            <div class="clear"></div>
+            <!--<div class="clear"></div>  O pluggin 'click' substitui a função do clear...-->
         </div><!--Center-->
     </section><!--Tratamentos-->
 
     <section id="depoimentos" class="depoimentos">
         <h2>Depoimentos</h2>
         <div class="center">
+            <div class="single-depoimento">
+                <quote>
+                    “Estrutura e atendimento excepcionais! adorei o atendimento da Dra. Fernanda, excelente profissional.”
+                </quote>
+                <div class="perfil-depoimento">
+                    <img src="images/depoimento1.png" />
+                    <span>Maria Augusta Santos</span>
+                </div><!--Perfil-Depoimento-->
+            </div><!--Single-Depoimento-->
+            <div class="single-depoimento">
+                <quote>
+                    “Estrutura e atendimento excepcionais! adorei o atendimento da Dra. Fernanda, excelente profissional.”
+                </quote>
+                <div class="perfil-depoimento">
+                    <img src="images/depoimento1.png" />
+                    <span>Maria Augusta Santos</span>
+                </div><!--Perfil-Depoimento-->
+            </div><!--Single-Depoimento-->
             <div class="single-depoimento">
                 <quote>
                     “Estrutura e atendimento excepcionais! adorei o atendimento da Dra. Fernanda, excelente profissional.”
@@ -205,15 +232,15 @@
             </div><!--Call-Instagran-->
 
             <div class="mosaico-redes">
-                <div class="img-single"></div><!--IMG-Single-->
-                <div class="img-single"></div><!--IMG-Single-->
-                <div class="img-single"></div><!--IMG-Single-->
-                <div class="img-single"></div><!--IMG-Single-->
-                <div class="img-single"></div><!--IMG-Single-->
-                <div class="img-single"></div><!--IMG-Single-->
-                <div class="img-single"></div><!--IMG-Single-->
-                <div class="img-single"></div><!--IMG-Single-->
-                <div class="img-single"></div><!--IMG-Single-->
+                <div class="img-single"><img src="images/insta1.jpeg"></div><!--IMG-Single-->
+                <div class="img-single"><img src="images/insta2.jpeg"></div><!--IMG-Single-->
+                <div class="img-single"><img src="images/insta3.jpeg"></div><!--IMG-Single-->
+                <div class="img-single"><img src="images/insta4.jpeg"></div><!--IMG-Single-->
+                <div class="img-single"><img src="images/insta5.png"></div><!--IMG-Single-->
+                <div class="img-single"><img src="images/insta2.jpeg"></div><!--IMG-Single-->
+                <div class="img-single"><img src="images/insta1.jpeg"></div><!--IMG-Single-->
+                <div class="img-single"><img src="images/insta3.jpeg"></div><!--IMG-Single-->
+                <div class="img-single"><img src="images/insta4.jpeg"></div><!--IMG-Single-->
             </div><!--Mosaico-Redes-->
             <div class="clear"></div>
 
@@ -282,6 +309,8 @@
     <script src="js/menuMobile.js"></script>
     <script src="js/formFeedback.js"></script>
     <script src="js/menuScroll.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slide.js"></script>
     
 </body>
 </html>

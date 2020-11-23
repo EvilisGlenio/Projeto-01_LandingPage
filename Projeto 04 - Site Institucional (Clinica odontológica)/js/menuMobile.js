@@ -1,5 +1,5 @@
 $(function(){
-    $('nav.mobile i').click(function(){
+    $('nav.mobile img').click(function(){
         $('nav.menu-mobile ul').slideToggle();
     })
 })
